@@ -42,7 +42,7 @@ module.exports = function(grunt) {
                 options: {
                     diff: true
                 },
-                src: 'css/main.css',
+                src: 'css/**/*.css',
             }
         },
         cssmin: {
