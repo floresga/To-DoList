@@ -17,6 +17,40 @@ module.exports = function(grunt) {
                     'css/main.css': 'build/styles/main.scss'
                 }
             }
+        },
+        bowerInstall: {
+            dist: {
+                src: ['app/*.html'],
+                dependencies: true,
+                devDependencies: true,
+                exclude: []
+            }
+        },
+        recess: {
+            dist: {
+                options: {
+                    compile: false,
+                    noIDs: true
+                },
+                files: {
+                    'src': 'css/**/*.css',
+                }
+            }
+        },
+        autoprefixer: {
+            dist: {
+                options: {
+                    diff: true
+                },
+                src: 'css/main.css',
+            }
+        },
+        cssmin: {
+            dist: {
+                files: {
+                    'dist/css/main.css': 'css/main.css'
+                }
+            }
         }
     });
     // Load the plugin that provides the "concat" task.
@@ -33,7 +67,11 @@ module.exports = function(grunt) {
 
     // These plugins provide necessary tasks.
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-bower-install');
+    grunt.loadNpmTasks('grunt-recess');
+    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Default task.
-    grunt.registerTask('default', ['sass']);
+    grunt.registerTask('default', ['sass', 'bowerInstall', 'recess','autoprefixer', 'cssmin']);
 };

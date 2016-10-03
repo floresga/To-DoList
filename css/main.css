@@ -1,5 +1,17 @@
 body {
-  color: #a2a2a2;
+  color: #333333;
+  border-top: 2px solid #2a2a2a;
+}
+
+/* Some comment */
+p {
+  margin: 0px 0px;
+  padding: 0.333em 0.6em;
+}
+
+h1 {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
 }
 
 /*# sourceMappingURL=main.css.map */

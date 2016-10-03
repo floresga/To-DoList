@@ -238,6 +238,189 @@ C:\Users\guill\OneDrive\Documents\To-DoList>npm install grunt-contrib-sass --sav
   | `-- lru-cache@2.7.3
   `-- dargs@4.1.0
 
+**********************************************************************************************
+
+8)Update PATH
+==========================================================================================
 
 
-C:\Windows\System32\cmd.exe /E:ON /K C:\Ruby23-x64\bin\setrbvars.bat
+Append PATH system variable with the following 'C:\Ruby23-x64\bin\'
+
+**********************************************************************************************
+
+7)Install BOWER
+==========================================================================================
+
+C:\Users\guill\OneDrive\Documents\To-DoList>npm install -g bower
+                                            ======================
+C:\Users\guill\AppData\Roaming\npm\bower -> C:\Users\guill\AppData\Roaming\npm\node_modules\bower\bin\bower
+C:\Users\guill\AppData\Roaming\npm
+`-- bower@1.7.9
+
+C:\Users\guill\OneDrive\Documents\To-DoList>bower --version
+                                             ===============
+1.7.9
+
+** UPDATE
+
+C:\Users\guill\OneDrive\Documents\To-DoList>bower install
+                                            ==============
+bower                     invalid-meta The "name" is recommended to be lowercase, can contain digits, dots, dashes
+bower jquery#~2.1.0         not-cached https://github.com/jquery/jquery-dist.git#~2.1.0
+bower jquery#~2.1.0            resolve https://github.com/jquery/jquery-dist.git#~2.1.0
+bower angular-route#~1.5.0      cached https://github.com/angular/bower-angular-route.git#1.5.8
+bower angular-route#~1.5.0    validate 1.5.8 against https://github.com/angular/bower-angular-route.git#~1.5.0
+bower angular#~1.5.0            cached https://github.com/angular/bower-angular.git#1.5.8
+bower angular#~1.5.0          validate 1.5.8 against https://github.com/angular/bower-angular.git#~1.5.0
+bower angular-loader#~1.5.0     cached https://github.com/angular/bower-angular-loader.git#1.5.8
+bower angular-loader#~1.5.0   validate 1.5.8 against https://github.com/angular/bower-angular-loader.git#~1.5.0
+bower html5-boilerplate#^5.3.0  cached https://github.com/h5bp/html5-boilerplate.git#5.3.0
+bower html5-boilerplate#^5.3.0         validate 5.3.0 against https://github.com/h5bp/html5-boilerplate.git#^5.3.0
+bower angular-mocks#~1.5.0               cached https://github.com/angular/bower-angular-mocks.git#1.5.8
+bower angular-mocks#~1.5.0             validate 1.5.8 against https://github.com/angular/bower-angular-mocks.git#~1.5.0
+bower jquery#~2.1.0                    checkout 2.1.4
+bower jquery#~2.1.0                    resolved https://github.com/jquery/jquery-dist.git#2.1.4
+bower html5-boilerplate#^5.3.0          install html5-boilerplate#5.3.0
+bower angular-route#~1.5.0              install angular-route#1.5.8
+bower angular-loader#~1.5.0             install angular-loader#1.5.8
+bower angular#~1.5.0                    install angular#1.5.8
+bower angular-mocks#~1.5.0              install angular-mocks#1.5.8
+bower jquery#~2.1.0                     install jquery#2.1.4
+
+html5-boilerplate#5.3.0 app\bower_components\html5-boilerplate
+
+angular-route#1.5.8 app\bower_components\angular-route
+└── angular#1.5.8
+
+angular-loader#1.5.8 app\bower_components\angular-loader
+└── angular#1.5.8
+
+angular#1.5.8 app\bower_components\angular
+
+angular-mocks#1.5.8 app\bower_components\angular-mocks
+└── angular#1.5.8
+
+jquery#2.1.4 app\bower_components\jquery
+
+C:\Users\guill\OneDrive\Documents\To-DoList>bower install backbone -S
+                                             ========================
+bower                     invalid-meta The "name" is recommended to be lowercase, can contain digits, dots, dashes
+bower backbone#*            not-cached https://github.com/jashkenas/backbone.git#*
+bower backbone#*               resolve https://github.com/jashkenas/backbone.git#*
+bower backbone#*              checkout 1.3.3
+bower backbone#*              resolved https://github.com/jashkenas/backbone.git#1.3.3
+bower underscore#>=1.8.3    not-cached https://github.com/jashkenas/underscore.git#>=1.8.3
+bower underscore#>=1.8.3       resolve https://github.com/jashkenas/underscore.git#>=1.8.3
+bower underscore#>=1.8.3      checkout 1.8.3
+bower underscore#>=1.8.3      resolved https://github.com/jashkenas/underscore.git#1.8.3
+bower backbone#^1.3.3          install backbone#1.3.3
+bower underscore#>=1.8.3       install underscore#1.8.3
+
+backbone#1.3.3 app\bower_components\backbone
+└── underscore#1.8.3
+
+underscore#1.8.3 app\bower_components\underscore
+
+
+C:\Users\guill\OneDrive\Documents\To-DoList>npm install --save-dev grunt-bower-install
+                                            ===========================================
+npm WARN deprecated grunt-bower-install@1.6.0: use grunt-wiredep instead
+npm WARN deprecated graceful-fs@2.0.3: graceful-fs v3.0.0 and before will fail on node releases >= v7.0. Please update to graceful-fs@^4.0.0 as soon as possible. Use 'npm
+ls graceful-fs' to find it in the tree.
+npm WARN deprecated lodash@1.3.1: lodash@<3.0.0 is no longer maintained. Upgrade to lodash@^4.0.0.
+npm WARN deprecated minimatch@0.3.0: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+To-DoList@0.0.0 C:\Users\guill\OneDrive\Documents\To-DoList
++-- UNMET PEER DEPENDENCY grunt@1.0.1
+`-- grunt-bower-install@1.6.0
+  +-- bower-config@0.5.2
+  | +-- graceful-fs@2.0.3
+  | +-- mout@0.9.1
+  | +-- optimist@0.6.1
+  | | `-- minimist@0.0.10
+  | `-- osenv@0.0.3
+  `-- wiredep@1.5.0
+    +-- chalk@0.1.1
+    | +-- ansi-styles@0.1.2
+    | `-- has-color@0.1.7
+    +-- glob@3.2.11
+    | `-- minimatch@0.3.0
+    |   `-- sigmund@1.0.1
+    +-- lodash@1.3.1
+    `-- through2@0.4.2
+      +-- readable-stream@1.0.34
+      | `-- isarray@0.0.1
+      `-- xtend@2.1.2
+        `-- object-keys@0.4.0
+
+npm WARN grunt-bower-install@1.6.0 requires a peer of grunt@~0.4.0 but none was installed.
+
+**********************************************************************************************
+
+7)Install Twitter RECESS
+==========================================================================================
+
+
+
+C:\Users\guill\OneDrive\Documents\To-DoList>npm install --save-dev grunt-recess
+                                            ====================================
+npm WARN deprecated grunt-recess@1.0.1: Deprecated as RECESS is unmaintained
+npm WARN prefer global ycssmin@1.0.1 should be installed with -g
+npm WARN prefer global recess@1.1.9 should be installed with -g
+To-DoList@0.0.0 C:\Users\guill\OneDrive\Documents\To-DoList
++-- UNMET PEER DEPENDENCY grunt@1.0.1
+`-- grunt-recess@1.0.1
+  +-- async@0.9.2
+  `-- recess@1.1.9
+    +-- less@1.3.3
+    | `-- ycssmin@1.0.1
+    +-- underscore@1.8.3
+    `-- watch@0.19.2
+      `-- exec-sh@0.2.0
+        `-- merge@1.2.0
+
+npm WARN grunt-bower-install@1.6.0 requires a peer of grunt@~0.4.0 but none was installed.
+
+**********************************************************************************************
+
+7)Install grunt-autoprefixer
+==========================================================================================
+
+C:\Users\guill\OneDrive\Documents\To-DoList>npm install --save-dev grunt-autoprefixer
+                                            =========================================
+To-DoList@0.0.0 C:\Users\guill\OneDrive\Documents\To-DoList
++-- UNMET PEER DEPENDENCY grunt@1.0.1
+`-- grunt-autoprefixer@3.0.4
+  +-- autoprefixer-core@5.2.1
+  | +-- browserslist@0.4.0
+  | +-- caniuse-db@1.0.30000542
+  | `-- num2fraction@1.2.2
+  +-- chalk@1.0.0
+  | +-- has-ansi@1.0.3
+  | | `-- ansi-regex@1.1.1
+  | +-- strip-ansi@2.0.1
+  | `-- supports-color@1.3.1
+  +-- diff@1.3.2
+  `-- postcss@4.1.16
+    +-- es6-promise@2.3.0
+    +-- js-base64@2.1.9
+    `-- source-map@0.4.4
+      `-- amdefine@1.0.0
+
+npm WARN grunt-bower-install@1.6.0 requires a peer of grunt@~0.4.0 but none was installed.
+
+**********************************************************************************************
+
+7)Install Yahoo!, is called YUICompressor
+==========================================================================================
+
+C:\Users\guill\OneDrive\Documents\To-DoList>npm install --save-dev grunt-contrib-cssmin
+                                            ===========================================
+To-DoList@0.0.0 C:\Users\guill\OneDrive\Documents\To-DoList
++-- UNMET PEER DEPENDENCY grunt@1.0.1
+`-- grunt-contrib-cssmin@1.0.2
+  `-- clean-css@3.4.20
+    +-- commander@2.8.1
+    `-- source-map@0.4.4
+
+npm WARN grunt-bower-install@1.6.0 requires a peer of grunt@~0.4.0 but none was installed.
+
