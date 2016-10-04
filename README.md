@@ -1,14 +1,8 @@
-# angular-seed — the seed for AngularJS apps
+# To-DoList App — Pro Grunt.js / Chapter 3: Using Grunt with HTML and CSS
 
-This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
-You can use it to quickly bootstrap your angular webapp projects and dev environment for these
-projects.
-
-The seed contains a sample AngularJS application and is preconfigured to install the Angular
-framework and a bunch of development and testing tools for instant web development gratification.
-
-The seed app doesn't do much, just shows how to wire two controllers and views together.
-
+we'll look at a variety of useful plug-ins that can help with our workflow when working with HTML and CSS, the fundamentals of the Web. The topics
+covered in this chapter include CSS preprocessing, simplifying installation of third-party dependencies, and optimizing content for release to
+the public.
 
 ## Getting Started
 
